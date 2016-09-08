@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25B6B6B6"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您遇到的问题或意见："
+        android:textColor="@android:color/primary_text_light_nodisable"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_frame"
+        android:gravity="top"
+        android:hint="请详细描述问题，填写描述至少大于15个字"
+        android:textColor="@android:color/secondary_text_light"
+        android:textColorHint="@android:color/tertiary_text_light"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_frame"
+        android:hint="请输入您的联系方式:邮箱、QQ、手机号(选填)"
+        android:textColor="@android:color/secondary_text_light"
+        android:textColorHint="@android:color/tertiary_text_light"
+        android:textSize="16sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:text="提交"
+        android:textColor="#F5F5F5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="请勿提交不良信息，否则将导致您的账号被封禁"
+        android:textColor="@android:color/primary_text_light_nodisable"
+        android:textSize="12sp" />
+</LinearLayout>

@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.MainActivity1">
+    <!--<item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/action_query"
+        android:icon="@mipmap/ic_action_ic_pageview_grey"
+        android:title="查询条件"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_add"
+        android:icon="@mipmap/ic_action_content_add_box"
+        android:title="添加显示列"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_bluetooth"
+        android:icon="@mipmap/ic_action_device_bluetooth"
+        android:title="蓝牙"
+        app:showAsAction="always" />
+
+</menu>

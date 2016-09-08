@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/edit_bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+
+        <!-- <Button
+             android:id="@+id/btn_disconnect"
+             android:layout_width="65dp"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:text="断开" />
+
+         <Button
+             android:id="@+id/btn_msg_send"
+             android:layout_width="65dp"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:text="发送"
+             android:visibility="invisible" />
+
+         <EditText
+             android:id="@+id/MessageText"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_toLeftOf="@id/btn_msg_send"
+             android:layout_toRightOf="@+id/btn_disconnect"
+             android:hint="说点什么呢?"
+             android:textSize="15dip"
+             android:visibility="invisible" />-->
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/edit_bottombar"
+        android:layout_weight="1.0"
+        android:divider="#ffc6c6c6"
+        android:scrollingCache="false" />
+
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="province">
+        <item>请选择</item>
+        <item>湖北省(鄂)</item>
+        <item>山东省(鲁)</item>
+    </string-array>
+
+    <string-array name="hubei">
+        <item>请选择</item>
+        <item>武汉(A)</item>
+        <item>黄石(B)</item>
+        <item>十堰(C)</item>
+        <item>荆州(D)</item>
+        <item>宜昌(E)</item>
+        <item>襄阳(F)</item>
+        <item>鄂州(G)</item>
+        <item>荆门(H)</item>
+        <item>黄冈(J)</item>
+        <item>孝感(K)</item>
+        <item>咸宁(L)</item>
+        <item>仙桃(M)</item>
+        <item>潜江(N)</item>
+        <item>神农架(P)</item>
+        <item>恩施(Q)</item>
+        <item>天门(R)</item>
+        <item>随州(S)</item>
+    </string-array>
+
+    <string-array name="shandong">
+        <item>请选择</item>
+        <item>济南(A)</item>
+        <item>青岛(B)</item>
+        <item>淄博(C)</item>
+        <item>枣庄(D)</item>
+        <item>东营(E)</item>
+        <item>烟台(F)</item>
+        <item>潍坊(G)</item>
+        <item>济宁(H)</item>
+        <item>泰安(J)</item>
+        <item>威海(K)</item>
+        <item>日照(L)</item>
+        <item>滨州(M)</item>
+        <item>德州(N)</item>
+        <item>聊城(P)</item>
+        <item>临沂(Q)</item>
+        <item>菏泽(R)</item>
+        <item>莱芜(S)</item>
+
+    </string-array>
+
+    <string-array name="displayColumn">
+        <item>前排温</item>
+        <item>后排温</item>
+        <item>泵频率</item>
+        <item>电源</item>
+        <item>两通阀</item>
+        <item>计量泵</item>
+        <item>喷嘴堵</item>
+        <item>LQ84-86</item>
+        <item>NOx超标</item>
+        <item>NOx传感器</item>
+        <item>尿素液位</item>
+        <item>尿素质量</item>
+        <item>SCR</item>
+        <item>催化器</item>
+    </string-array>
+
+    <string-array name="curveName">
+        <item>NOx_F</item>
+        <item>NOx_R</item>
+        <item>DNOx_Effi</item>
+        <item>L19</item>
+        <item>TR21</item>
+        <item>TC90</item>
+        <item>TC92</item>
+        <item>Freq_pump</item>
+    </string-array>
+
+    <string-array name="curveNameCH">
+        <!--<item>NOx_F</item>
+        <item>NOx_R</item>
+        <item>DNOx_Effi</item>
+        <item>L19</item>
+        <item>TR21</item>
+        <item>TC90</item>
+        <item>TC92</item>
+        <item>Freq_pump</item>-->
+
+        <item>前氮氧值</item>
+        <item>后氮氧值</item>
+        <item>去除率</item>
+        <item>尿素温度</item>
+        <item>尿素液位</item>
+        <item>前排温</item>
+        <item>后排温</item>
+        <item>泵频率</item>
+    </string-array>
+
+    <string-array name="curveName_unit">
+        <!--<item>NOx_F  (PPM)</item>
+        <item>NOx_R  (PPM)</item>
+        <item>DNOx_Effi  (%)</item>
+        <item>L19  (℃)</item>
+        <item>TR21  (%)</item>
+        <item>TC90  (℃)</item>
+        <item>TC92  (℃)</item>
+        <item>Freq_pump  (MHz)</item>-->
+
+        <item>前氮氧值  (PPM)</item>
+        <item>后氮氧值  (PPM)</item>
+        <item>去除率  (%)</item>
+        <item>尿素温度  (℃)</item>
+        <item>尿素液位  (%)</item>
+        <item>前排温  (℃)</item>
+        <item>后排温  (℃)</item>
+        <item>泵频率  (MHz)</item>
+    </string-array>
+
+    <string-array name="省份">
+        <item>京</item>
+        <item>津</item>
+        <item>冀</item>
+        <item>晋</item>
+        <item>蒙</item>
+        <item>辽</item>
+        <item>吉</item>
+        <item>黑</item>
+        <item>沪</item>
+        <item>苏</item>
+        <item>浙</item>
+        <item>皖</item>
+        <item>闽</item>
+        <item>赣</item>
+        <item>鲁</item>
+        <item>豫</item>
+        <item>鄂</item>
+        <item>湘</item>
+        <item>粤</item>
+        <item>桂</item>
+        <item>琼</item>
+        <item>渝</item>
+        <item>川</item>
+        <item>贵</item>
+        <item>云</item>
+        <item>藏</item>
+        <item>陕</item>
+        <item>甘</item>
+        <item>青</item>
+        <item>宁</item>
+        <item>新</item>
+        <item>港</item>
+        <item>澳</item>
+        <item>台</item>
+    </string-array>
+</resources>

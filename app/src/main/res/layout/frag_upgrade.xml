@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_current"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/background_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前版本:"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_current_version"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:text="1.0"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_newest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_current"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/background_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_newest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最新版本:"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_newest_version"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:text="1.1"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.xclong.vehiclemonitordemo.CustomView.HorizontalProgressbarWithProgress
+        android:id="@+id/progressbar_upgrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_version"
+        android:layout_margin="12dp"
+        android:visibility="gone"
+        app:progress_reach_color="@color/colorPrimary"
+        app:progress_text_color="@color/colorPrimary"
+        app:progress_text_size="14sp"
+        app:progress_unreach_color="#3F8BC34A" />
+
+    <ListView
+        android:id="@+id/lv_upgrade"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_upgrade"
+        android:layout_below="@+id/progressbar_upgrade"
+        android:layout_weight="1"></ListView>
+
+
+    <Button
+        android:id="@+id/btn_upgrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_default_background"
+        android:text="目前无需升级"
+        android:textColor="@color/white" />
+</RelativeLayout>

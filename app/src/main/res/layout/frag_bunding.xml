@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25B6B6B6"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/ll_a"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/view_background_normal">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="绑定车牌号"
+            android:textColor="@android:color/primary_text_light" />
+
+        <TextView
+            android:id="@+id/tv_region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/et_plate_number"
+            android:background="@drawable/new_background"
+            android:padding="7dp"
+            android:text="鄂"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_plate_number"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:digits="0123456789ABCDEFGHJKLMNPQRSTUVWXYZ"
+            android:hint="填写车牌号"
+            android:maxLength="6"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@color/secondary_text"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <!--<include layout="@layout/split_line" />-->
+
+    <!--<LinearLayout
+        android:id="@+id/ll_b"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/WrapMatch"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="车牌颜色"
+            android:textColor="@android:color/primary_text_light" />
+
+
+        <TextView
+            style="@style/MatchMatch"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:textColor="@android:color/primary_text_light" />
+
+        <EditText
+            android:id="@+id/et_plate_color"
+            style="@style/MatchMatch"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:background="@null"
+            android:gravity="center|right"
+            android:textColor="@android:color/primary_text_light" />
+
+
+        &lt;!&ndash;  <ImageView
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:layout_marginRight="15dp"
+              android:src="@drawable/to2" />&ndash;&gt;
+    </LinearLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/view_background_normal">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="车牌颜色"
+            android:textColor="@android:color/primary_text_light" />
+
+        <com.xclong.vehiclemonitordemo.CustomView.SmoothCheckBox
+            android:id="@+id/scb_blue"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            app:color_checked="@color/blue"
+            app:color_unchecked="@color/blue"
+            app:color_unchecked_stroke="@color/white"
+            app:duration="100" />
+
+        <com.xclong.vehiclemonitordemo.CustomView.SmoothCheckBox
+            android:id="@+id/scb_yellow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/scb_blue"
+            app:color_checked="@color/yellow"
+            app:color_unchecked="@color/yellow"
+            app:color_unchecked_stroke="@color/white"
+            app:duration="100" />
+    </RelativeLayout>
+
+    <!--<include layout="@layout/split_line" />-->
+
+    <Button
+        android:id="@+id/btn_bund_license_plate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_default_background"
+        android:text="绑定车牌号"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll_c"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/view_background_normal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/WrapMatch"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="服务器IP/端口"
+            android:textColor="@android:color/primary_text_light" />
+
+        <!--<TextView
+            android:id="@+id/tv_ip"
+            style="@style/MatchMatch"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:textColor="@android:color/primary_text_light" />-->
+
+        <!-- <ImageView
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:layout_marginRight="15dp"
+             android:src="@drawable/to2" />-->
+
+        <EditText
+            android:id="@+id/et_ip_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_ip_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_ip_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_ip_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_port"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="5"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- <include layout="@layout/split_line" />-->
+
+    <Button
+        android:id="@+id/btn_bund_ip"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_default_background"
+        android:text="绑定服务器IP/端口"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white" />
+
+    <!--<LinearLayout
+        android:id="@+id/ll_d"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            style="@style/MatchMatch"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="清空缓存"
+            android:textColor="@android:color/primary_text_light" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/to2" />
+    </LinearLayout>
+
+
+    <include layout="@layout/split_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_e"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            style="@style/MatchMatch"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="用户协议"
+            android:textColor="@android:color/primary_text_light" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/to2" />
+    </LinearLayout>
+
+
+    <include layout="@layout/split_line" />-->
+
+
+</LinearLayout>

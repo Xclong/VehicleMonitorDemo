@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25B6B6B6"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!--<RadioGroup style="@style/MatchWrap">
+
+        <RadioGroup
+            android:id="@+id/rg_1"
+            style="@style/MatchWrap"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_nox_f"
+                style="@style/MyRadioButtonStyle"
+                android:text="@string/str1" />
+
+            <RadioButton
+                android:id="@+id/rb_nox_r"
+                style="@style/MyRadioButtonStyle"
+                android:layout_marginLeft="5dp"
+                android:text="@string/str2" />
+
+            <RadioButton
+                android:id="@+id/rb_dnox_effi"
+                style="@style/MyRadioButtonStyle"
+                android:layout_marginLeft="5dp"
+                android:text="@string/str3" />
+
+            <RadioButton
+                android:id="@+id/rb_l19"
+                style="@style/MyRadioButtonStyle"
+                android:layout_marginLeft="5dp"
+                android:text="@string/str4" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rg_2"
+            style="@style/MatchWrap"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_tr21"
+                style="@style/MyRadioButtonStyle"
+                android:text="@string/str5" />
+
+            <RadioButton
+                android:id="@+id/rb_tc90"
+                style="@style/MyRadioButtonStyle"
+                android:layout_marginLeft="5dp"
+                android:text="@string/str6" />
+
+            <RadioButton
+                android:id="@+id/rb_tc92"
+                style="@style/MyRadioButtonStyle"
+                android:layout_marginLeft="5dp"
+                android:text="@string/str7" />
+
+            <RadioButton
+                android:id="@+id/rb_freq_pump"
+                style="@style/MyRadioButtonStyle"
+                android:layout_marginLeft="5dp"
+                android:text="@string/str8" />
+        </RadioGroup>
+    </RadioGroup>-->
+
+    <com.xclong.vehiclemonitordemo.CustomView.MultiLineRadioGroup
+        android:id="@+id/multilineradiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:child_count="8"
+        app:child_layout="@layout/child"
+        app:child_margin_horizontal="5dp"
+        app:child_margin_vertical="5dp"
+        app:child_values="@array/curveNameCH"
+        app:gravity="0"
+        app:single_choice="true"></com.xclong.vehiclemonitordemo.CustomView.MultiLineRadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="3"
+            android:background="@drawable/button_shape_normal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="开始时间:"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#FF202020"
+                    android:gravity="center_vertical" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/tv_start_date"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="2016/05/11"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_start_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="00:01"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#FF202020" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="结束时间:"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#FF202020" />
+
+                <!--<TextView
+                    android:id="@+id/et_end_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:inputType="none"
+                    android:singleLine="true"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="12sp" />-->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/tv_end_date"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="2016/05/11"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_end_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="00:01"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_show"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/button_default_background"
+            android:gravity="center"
+            android:text="SHOW"
+            android:textColor="@color/white" />
+
+
+        <!--<View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#FF202020" />-->
+
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_date"
+        style="@style/MatchWrap"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_days"
+            style="@style/MyRadioButtonStyle"
+            android:text="DAYS" />
+
+        <RadioButton
+            android:id="@+id/rb_weeks"
+            style="@style/MyRadioButtonStyle"
+            android:layout_marginLeft="10dp"
+            android:text="WEEKS" />
+
+        <RadioButton
+            android:id="@+id/rb_months"
+            style="@style/MyRadioButtonStyle"
+            android:layout_marginLeft="10dp"
+            android:text="MONTHS" />
+
+        <RadioButton
+            android:id="@+id/rb_years"
+            style="@style/MyRadioButtonStyle"
+            android:layout_marginLeft="10dp"
+            android:text="YEARS" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll_chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/linechart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_shape_normal" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xclong.vehiclemonitordemo">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".application.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppBaseTheme"
+        tools:replace="android:icon">">
+
+        <activity
+            android:name=".activity.ShowActivity"
+            android:theme="@style/FullscreenAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="com.xclong.vehiclemonitordemo.MAINACTIVITY" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.PersonalDataActivity"
+            android:label="个人信息"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/FullscreenAppTheme" />
+
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:theme="@style/FullscreenAppTheme" />
+
+        <activity
+            android:name=".activity.DetailActivity"
+            android:parentActivityName=".activity.MainActivity" />
+
+        <activity
+            android:name=".activity.BluetoothActivity"
+            android:label="连接蓝牙设备"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+
+        <!-- <activity
+             android:name=".activity.BluetoothSendFileActivity"
+             android:parentActivityName=".activity.BluetoothActivity"
+             android:theme="@style/AppTheme" />-->
+
+        <service android:name=".service.CommunicationService">
+            <intent-filter>
+                <action android:name="com.xclong.vehiclemonitordemo.COMMUNICATION_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".receiver.MessageReadReceiver" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57675d0b67e58e684a002fe3"></meta-data>
+
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="e315b9eb1f41513e66706295a7de7322"></meta-data>
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="WANDOUJIA"></meta-data>
+    </application>
+
+</manifest>

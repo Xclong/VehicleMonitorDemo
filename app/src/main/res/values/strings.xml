@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">VehicleMonitorDemo</string>
+
+    <string name="navigation_main">主      页</string>
+    <string name="navigation_bunding">绑    定</string>
+    <string name="navigation_message">系统消息</string>
+    <string name="navigation_opinion">意见反馈</string>
+    <string name="navigation_abnormal">故障日志</string>
+    <string name="navigation_check">稽    查</string>
+    <string name="navigation_upgrade">设备升级</string>
+    <string name="login_name">账        号</string>
+    <string name="login_pass">密        码</string>
+
+    <string name="str1">NOx_F</string>
+    <string name="str2">NOx_R</string>
+    <string name="str3">DNOx_Effi</string>
+    <string name="str4">L19</string>
+    <string name="str5">TR21</string>
+    <string name="str6">TC90</string>
+    <string name="str7">TC92</string>
+    <string name="str8">Freq_pump</string>
+
+
+    <string name="lorem">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		In mollis est vitae erat laoreet consectetur. Mauris dui mauris,
+		dictum vel egestas vel, porta sed ante. Phasellus congue viverra ipsum,
+		in elementum arcu ultricies nec.Morbi tincidunt nisl lacinia, placerat nisi eget, luctus tortor.
+		Morbi efficitur dictum leo, sit amet volutpat lorem sodales nec. Quisque et erat et turpis fringilla condimentum.
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor vulputate libero vitae iaculis.
+		Curabitur id blandit quam. Praesent massa ante, pulvinar vitae sagittis commodo, scelerisque porttitor eros.
+		Mauris suscipit a enim nec congue. Mauris tristique cursus aliquet. Nunc quis hendrerit nunc. Praesent tristique tellus purus,
+		a pretium ex gravida id. Cras laoreet malesuada nulla, at bibendum metus ultricies a. Fusce eu ornare arcu. Proin ut molestie est.
+		Vestibulum quis vehicula erat. Nam sed tempus nibh. Sed tortor ante, maximus venenatis odio sed, ultricies maximus lectus.
+		Aliquam sed volutpat ligula. Integer bibendum, magna ac lacinia suscipit,
+		risus libero rutrum justo, sed tempus augue tellus eget est. Curabitur convallis augue nisl,
+		id efficitur urna posuere faucibus. Ut sed egestas nulla, eu finibus metus. Nunc a arcu ante.
+		Aenean ullamcorper dolor non condimentum congue. Aenean mauris nunc, pellentesque at placerat vitae,
+		aliquet quis orci. Curabitur maximus augue ut bibendum sagittis.
+	</string>
+    <string name="bind_car_number">绑定车牌号</string>
+    <string name="comfirm">确定</string>
+    <string name="bind_ip">绑定服务器IP/端口</string>
+    <string name="menu_fault_empty">清空</string>
+
+
+</resources>

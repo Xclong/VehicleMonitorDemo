@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="#F5F5F5"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_head_car_number"
+        style="@style/List_detail"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="车牌号" />
+
+    <TextView
+        android:id="@+id/tv_head_NOx_F"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="前氮氧值" />
+
+    <TextView
+        android:id="@+id/tv_head_NOx_R"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="后氮氧值" />
+
+
+    <TextView
+        android:id="@+id/tv_head_DNOx_Effi"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="去除率" />
+
+    <TextView
+        android:id="@+id/tv_head_TR21"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="尿素温度" />
+
+    <TextView
+        android:id="@+id/tv_head_L19"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="尿素液位" />
+
+    <TextView
+        android:id="@+id/tv_head_TC90"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="前排温" />
+
+    <TextView
+        android:id="@+id/tv_head_TC92"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="后排温" />
+
+    <TextView
+        android:id="@+id/tv_head_freq_pump"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="泵频率" />
+
+    <TextView
+        android:id="@+id/tv_head_power"
+        style="@style/List_detail"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:text="电源" />
+
+    <TextView
+        android:id="@+id/tv_head_twoway_value_failure"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="两通阀" />
+
+    <TextView
+        android:id="@+id/tv_head_metering_pump_failure"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="计量泵" />
+
+    <TextView
+        android:id="@+id/tv_head_nozzle_block_failure"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="喷嘴堵" />
+
+
+    <TextView
+        android:id="@+id/tv_head_LQ84"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="LQ84-86" />
+
+    <TextView
+        android:id="@+id/tv_head_NOx_overproof_failure"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="Nox超标" />
+
+    <TextView
+        android:id="@+id/tv_head_NOx_sensor_failure"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="NOx传感器" />
+
+    <TextView
+        android:id="@+id/tv_head_urea_level_failure"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="尿素液位" />
+
+    <TextView
+        android:id="@+id/tv_head_urea_quality_failure"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="尿素质量" />
+
+    <TextView
+        android:id="@+id/tv_head_SCR_failure"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="SCR" />
+
+    <TextView
+        android:id="@+id/tv_head_Depm_failure"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="催化器" />
+
+    <TextView
+        android:id="@+id/tv_head_time"
+        style="@style/List_detail"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="日期" />
+
+    <TextView
+        android:id="@+id/tv_head_zt"
+        style="@style/List_detail"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="状态" />
+
+</LinearLayout>

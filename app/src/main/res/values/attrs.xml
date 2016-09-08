@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="progress_unreach_color" format="color"></attr>
+    <attr name="progress_unreach_height" format="dimension"></attr>
+    <attr name="progress_reach_color" format="color"></attr>
+    <attr name="progress_reach_height" format="dimension"></attr>
+    <attr name="progress_text_color" format="color"></attr>
+    <attr name="progress_text_size" format="dimension"></attr>
+    <attr name="progress_text_offset" format="dimension"></attr>
+
+    <declare-styleable name="HorizontalProgressbarWithProgress">
+        <attr name="progress_unreach_color"></attr>
+        <attr name="progress_unreach_height"></attr>
+        <attr name="progress_reach_color"></attr>
+        <attr name="progress_reach_height"></attr>
+        <attr name="progress_text_color"></attr>
+        <attr name="progress_text_size"></attr>
+        <attr name="progress_text_offset"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressbarWithProgress">
+        <attr name="radius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="MultiLineRadioGroup">
+        <attr name="child_margin_horizontal" format="dimension" />
+        <attr name="child_margin_vertical" format="dimension" />
+        <attr name="child_layout" format="integer" />
+        <attr name="child_count" format="integer" />
+        <attr name="child_values" format="integer" />
+        <attr name="single_choice" format="boolean" />
+        <attr name="gravity" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SmoothCheckBox">
+        <attr name="duration" format="integer"/>
+        <attr name="stroke_width" format="dimension"/>
+        <attr name="color_tick" format="color"/>
+        <attr name="color_checked" format="color"/>
+        <attr name="color_unchecked" format="color"/>
+        <attr name="color_unchecked_stroke" format="color"/>
+    </declare-styleable>
+</resources>

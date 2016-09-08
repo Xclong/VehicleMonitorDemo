@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25B6B6B6"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_shape_normal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="日期：" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="车牌颜色：" />
+
+                <TextView
+                    android:id="@+id/tv_license_plate_color"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="#FFE83B" />
+
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="平均车速：" />
+
+                <TextView
+                    android:id="@+id/tv_average_speed"
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="Km/h" />
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="发动机转速：" />
+
+                <TextView
+                    android:id="@+id/tv_engine_speed"
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="RPM" />
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="累计行驶里程：" />
+
+                <TextView
+                    android:id="@+id/tv_total_mileage"
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="Km" />
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="差压值：" />
+
+                <TextView
+                    android:id="@+id/tv_differential_perssure_value"
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="kPa" />
+
+
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="前氮氧值：" />
+
+                <TextView
+                    android:id="@+id/tv_NOx_F"
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="PPM" />
+
+
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="后氮氧值：" />
+
+                <TextView
+                    android:id="@+id/tv_NOx_R"
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="PPM" />
+
+
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="去除率：" />
+
+                <TextView
+                    android:id="@+id/tv_DNOX_Effi"
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="%" />
+
+
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="尿素温度：" />
+
+                <TextView
+                    android:id="@+id/tv_TR21"
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="°C" />
+
+
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="尿素液位：" />
+
+                <TextView
+                    android:id="@+id/tv_L19"
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="%" />
+
+
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="前排温：" />
+
+                <TextView
+                    android:id="@+id/tv_TC90"
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="°C" />
+
+
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="后排温：" />
+
+                <TextView
+                    android:id="@+id/tv_TC92"
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="°C" />
+
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="泵频率：" />
+
+                <TextView
+                    android:id="@+id/tv_freq_pump"
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="正常"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="电源：" />
+
+                <TextView
+                    android:id="@+id/tv_power"
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="正常"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="两通阀故障：" />
+
+                <TextView
+                    android:id="@+id/tv_twoway_vaule_failure"
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="正常"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="计量泵故障：" />
+
+                <TextView
+                    android:id="@+id/tv_metering_pump_failure"
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="正常"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="喷嘴堵故障：" />
+
+                <TextView
+                    android:id="@+id/tv_nozzle_block_faulure"
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="正常"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="LQ84-86故障：" />
+
+                <TextView
+                    android:id="@+id/tv_LQ8486_failure"
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="正常"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="NOx超标故障：" />
+
+                <TextView
+                    android:id="@+id/tv_NOx_overproof_failure"
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="正常"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="NOx传感器故障：" />
+
+                <TextView
+                    android:id="@+id/tv_NOx_sensor_failure"
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="正常"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="尿素液位故障：" />
+
+                <TextView
+                    android:id="@+id/tv_urea_level_failure"
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="正常"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="尿素质量故障：" />
+
+                <TextView
+                    android:id="@+id/tv_urea_quality_failure"
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="正常"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="SCR故障：" />
+
+                <TextView
+                    android:id="@+id/tv_SCR_failure"
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="正常"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <include layout="@layout/split_line" />
+
+            <LinearLayout style="@style/DetailLinearStyle">
+
+                <TextView
+                    style="@style/MyTextStyle1"
+                    android:text="DePM催化剂故障：" />
+
+                <TextView
+                    android:id="@+id/tv_depm_failure"
+                    style="@style/AutoWrap"
+                    android:gravity="center"
+                    android:text="正常"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

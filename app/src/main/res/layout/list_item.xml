@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5F5F5"
+    android:clickable="true"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_item_car_number"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="车牌号"
+        android:textColor="@drawable/text_color_selector"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_item_NOx_F"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:text="NOx_F" />
+
+    <TextView
+        android:id="@+id/tv_item_NOx_R"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:text="NOx_R" />
+
+    <TextView
+        android:id="@+id/tv_item_DNOx_Effi"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:text="DNOx_Effi" />
+
+    <TextView
+        android:id="@+id/tv_item_TR21"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:text="TR21" />
+
+    <TextView
+        android:id="@+id/tv_item_L19"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:text="L19(%)" />
+
+    <TextView
+        android:id="@+id/tv_item_TC90"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:text="TC90" />
+
+    <TextView
+        android:id="@+id/tv_item_TC92"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:text="TC92" />
+
+    <TextView
+        android:id="@+id/tv_item_freq_pump"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:text="Freq_pump" />
+
+    <TextView
+        android:id="@+id/tv_item_power"
+        style="@style/List_detail"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:text="电源" />
+
+    <TextView
+        android:id="@+id/tv_item_twoway_value_failure"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:text="两通阀" />
+
+    <TextView
+        android:id="@+id/tv_item_metering_pump_failure"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:text="计量泵" />
+
+    <TextView
+        android:id="@+id/tv_item_nozzle_block_failure"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:text="喷嘴堵" />
+
+
+    <TextView
+        android:id="@+id/tv_item_LQ84"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:text="LQ84-86" />
+
+    <TextView
+        android:id="@+id/tv_item_NOx_overproof_failure"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:text="Nox超标" />
+
+    <TextView
+        android:id="@+id/tv_item_NOx_sensor_failure"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:text="NOx传感器" />
+
+    <TextView
+        android:id="@+id/tv_item_urea_level_failure"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:text="尿素液位" />
+
+    <TextView
+        android:id="@+id/tv_item_urea_quality_failure"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:text="尿素质量" />
+
+    <TextView
+        android:id="@+id/tv_item_SCR_failure"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:text="SCR" />
+
+    <TextView
+        android:id="@+id/tv_item_Depm_failure"
+        style="@style/List_detail"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:text="催化器" />
+
+    <TextView
+        android:id="@+id/tv_item_time"
+        style="@style/List_detail"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="日期" />
+
+    <TextView
+        android:id="@+id/tv_item_zt"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="7dp" />
+
+</LinearLayout>

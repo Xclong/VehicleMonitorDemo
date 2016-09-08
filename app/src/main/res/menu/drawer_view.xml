@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@mipmap/ic_action_action_account_balance"
+            android:title="@string/navigation_main" />
+
+        <item
+            android:id="@+id/nav_bunding"
+            android:icon="@mipmap/ic_action_action_settings"
+            android:title="@string/navigation_bunding" />
+
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@mipmap/ic_action_communication_message"
+            android:title="@string/navigation_message" />
+
+        <item
+            android:id="@+id/nav_upgrade"
+            android:icon="@mipmap/ic_action_upgrade"
+            android:title="@string/navigation_upgrade" />
+
+        <item
+            android:id="@+id/nav_abnormal"
+            android:icon="@mipmap/ic_action_action_assignment"
+            android:title="@string/navigation_abnormal" />
+
+        <item
+            android:id="@+id/nav_opinion"
+            android:icon="@mipmap/ic_action_content_create"
+            android:title="@string/navigation_opinion" />
+
+    </group>
+
+
+</menu>
